@@ -1,0 +1,22 @@
+project:
+  name: "Kortix Workspace"
+  description: A Kortix CompanyOS workspace.
+
+builtin_agents:
+  my_kortix: true
+
+default_agent: mykortix
+
+skills: {}
+
+agents:
+  worker:
+    description: "General-purpose worker: coding, research, writing, ops and data work, done end to end in its own sandbox."
+    mode: primary
+    permission: allow
+    prompt_file: agents/worker.md
+    tools: "*"
+    skills: "*"
+    connectors: "*"
+    secrets: "*"
+    kortix_permissions: "*"
